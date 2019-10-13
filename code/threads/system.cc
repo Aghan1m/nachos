@@ -8,6 +8,9 @@
 #include "copyright.h"
 #include "system.h"
 
+int threadPool[MaxThreadNum];
+Thread* threadPtrPool[MaxThreadNum];
+
 // This defines *all* of the global data structures used by Nachos.
 // These are all initialized and de-allocated by this file.
 
@@ -18,6 +21,7 @@ Interrupt *interrupt;			// interrupt status
 Statistics *stats;			// performance metrics
 Timer *timer;				// the hardware timer device,
 					// for invoking context switches
+				
 
 #ifdef FILESYS_NEEDED
 FileSystem  *fileSystem;
@@ -80,6 +84,12 @@ Initialize(int argc, char **argv)
     int argCount;
     char* debugArgs = "";
     bool randomYield = FALSE;
+
+	//lab1: init thread pool
+	for(int i=0; i<MaxThreadNum; i++) {
+		threadPool[i] = 0;
+		threadPtrPool[i] = NULL;
+	}
 
 #ifdef USER_PROGRAM
     bool debugUserProg = FALSE;	// single step user program

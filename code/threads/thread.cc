@@ -24,6 +24,57 @@
 					// execution stack, for detecting 
 					// stack overflows
 
+// lab1: add userId and threadId
+#define INVALID_TID -1
+Thread::UserId()
+{
+    return userId;
+}
+
+Thread::ThreadId()
+{
+    return threadId;
+}
+
+time_t
+Thread::CreateTime()
+{
+    return creaTime;
+}
+
+char*
+Thread::Status()
+{
+    switch (status) {
+        case 0:
+            return "JUST_CREATED";
+        case 1:
+            return "RUNNING";
+        case 2:
+            return "READY";
+        case 3: 
+            return "BLOCKED";
+        default:
+            return "STATE_ERROR"; 
+    }
+}
+
+void 
+Thread::ShowThread()
+{
+    printf("%d\t%d\t%s\t%s\n", threadId, userId, Status(), ctime(&creaTime));
+}
+
+int allocThreadId() {
+	for(int i=0; i<128; i++) {
+		if(threadPool[i] == 0 && threadPtrPool[i] == NULL) {
+			threadPool[i] = 1;
+			return i;
+		}
+	}
+	return INVALID_TID;
+}
+
 //----------------------------------------------------------------------
 // Thread::Thread
 // 	Initialize a thread control block, so that we can then call
@@ -31,9 +82,19 @@
 //
 //	"threadName" is an arbitrary string, useful for debugging.
 //----------------------------------------------------------------------
-
+//
 Thread::Thread(char* threadName)
 {
+	threadId = allocThreadId();
+
+	if(threadId == INVALID_TID) {
+        printf("Sorry, threadpool have no available thread, max thread number is: %d \n", MaxThreadNum);
+    }
+	ASSERT(threadId!=INVALID_TID);
+
+	threadPtrPool[threadId] = this;
+    time(&creaTime);
+
     name = threadName;
     stackTop = NULL;
     stack = NULL;
@@ -60,6 +121,8 @@ Thread::~Thread()
     DEBUG('t', "Deleting thread \"%s\"\n", name);
 
     ASSERT(this != currentThread);
+
+	threadPool[threadId] = 0;
     if (stack != NULL)
 	DeallocBoundedArray((char *) stack, StackSize * sizeof(int));
 }

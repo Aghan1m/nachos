@@ -39,6 +39,7 @@
 
 #include "copyright.h"
 #include "utility.h"
+#include <time.h>
 
 #ifdef USER_PROGRAM
 #include "machine.h"
@@ -102,9 +103,20 @@ class Thread {
     char* getName() { return (name); }
     void Print() { printf("%s, ", name); }
 
+// lab1: userId and threadId
+    int UserId();
+    int ThreadId();
+    time_t CreateTime();
+    void ShowThread();
+    char* Status();
+
   private:
+// lab1
+    int threadId;
+    int userId;
+    time_t creaTime;
+
     // some of the private data for this class is listed above
-    
     int* stack; 	 		// Bottom of the stack 
 					// NULL if this is the main thread
 					// (If NULL, don't deallocate stack)

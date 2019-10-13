@@ -13,6 +13,10 @@
 #include "system.h"
 #include "elevatortest.h"
 
+//lab1
+void MaxThreadTest();
+void TsTest();
+
 // testnum is set in main.cc
 int testnum = 1;
 
@@ -63,11 +67,60 @@ ThreadTest()
 {
     switch (testnum) {
     case 1:
-	ThreadTest1();
-	break;
+    ThreadTest1();
+    break;
+    case 2:
+    MaxThreadTest();
+    break;
+    case 3:
+    TsTest();
+    break;
     default:
 	printf("No test specified.\n");
 	break;
     }
 }
 
+void
+MaxThreadTest()
+{
+    DEBUG('t', "Entering MaxThreadTest");
+
+    for(int i=0; i<MaxThreadNum; i++)
+    {
+        Thread *t = new Thread("forked thread");
+        printf("%d*** thread threadId: %d userId: %d\n",i, t->ThreadId(), t->UserId());
+
+    }
+}
+
+// lab1: ts
+void
+TS()
+{
+    printf("Tid\tUid\tStatus\tTime\n");
+    for(int i=0; i<MaxThreadNum; i++)
+    {
+        if(threadPool[i]) 
+        {
+            threadPtrPool[i]->ShowThread();
+        }
+    }
+}
+
+void
+TsTest()
+{
+
+    DEBUG('t', "Entering TsTest");
+
+    //time_t timep;
+    //time(&timep);
+    //printf("%s\n",ctime(&timep));
+
+    for(int i=0; i<5; i++)
+    {
+        Thread *t = new Thread("forked thread");
+    }
+    TS();
+}

@@ -114,6 +114,8 @@ class Thread {
 	void setPriority(int prio);
 	int Priority();
 	void InitThread(char* threadName, int prio);
+	void AddCpuTime();
+	int UsedCpuTime();
 
   private:
 // lab1
@@ -122,6 +124,7 @@ class Thread {
     time_t creaTime;
 // lab2
 	int priority;
+	int usedCpuTime;
 
     // some of the private data for this class is listed above
     int* stack; 	 		// Bottom of the stack 

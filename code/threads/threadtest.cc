@@ -19,6 +19,7 @@ void TsTest();
 
 //lab2
 void SchedPriorityTest();
+void SchedRRTest();
 
 // testnum is set in main.cc
 int testnum = 1;
@@ -37,9 +38,12 @@ SimpleThread(int which)
 {
     int num;
     
-    for (num = 0; num < 5; num++) {
-	printf("*** thread %d looped %d times\n", which, num);
-        currentThread->Yield();
+    for (num = 0; num < 10; num++) {
+	printf("*** thread %d looped %d times currentTimerTicks %d usedCpuTime %d\n", which, num, stats->totalTicks, currentThread->UsedCpuTime());
+//interrupt->OneTick();
+	interrupt->SetLevel(IntOff);
+	interrupt->SetLevel(IntOn);
+//        currentThread->Yield();
     }
 }
 
@@ -85,6 +89,10 @@ ThreadTest()
 	SchedPriorityTest();
 	break;
 
+	case 5:
+	SchedRRTest();
+	break;
+
     default:
 	printf("No test specified.\n");
 	break;
@@ -108,7 +116,7 @@ MaxThreadTest()
 void
 TS()
 {
-    printf("Tid\tUid\tPriority\tStatus\tTime\n");
+    printf("Tid\tUid\tPri\tCPU\tStatus\tTime\n");
     for(int i=0; i<MaxThreadNum; i++)
     {
         if(threadPool[i]) 
@@ -142,6 +150,26 @@ SchedPriorityTest()
 	DEBUG('t', "Entering SchedPriorityTest");
 
 	CurrentSchedStrategy = SCHED_PRIORITY;
+
+	Thread *t1 = new Thread("forked thread", 1);
+	Thread *t2 = new Thread("forked thread", 3);
+	Thread *t3 = new Thread("forked thread", 2);
+	Thread *t4 = new Thread("forked thread", 0);
+	Thread *t5 = new Thread("forked thread", 5);
+
+    t1->Fork(SimpleThread, (void*)1);
+    t2->Fork(SimpleThread, (void*)2);
+    t3->Fork(SimpleThread, (void*)3);
+    t4->Fork(SimpleThread, (void*)4);
+    t5->Fork(SimpleThread, (void*)5);
+}
+
+void
+SchedRRTest()
+{
+	DEBUG('t', "Entering SchedRRTest");
+
+	CurrentSchedStrategy = SCHED_RR;
 
 	Thread *t1 = new Thread("forked thread", 1);
 	Thread *t2 = new Thread("forked thread", 3);

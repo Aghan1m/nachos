@@ -66,7 +66,7 @@ Thread::Status()
 void 
 Thread::ShowThread()
 {
-    printf("%d\t%d\t%d\t%s\t%s\n", threadId, userId, priority, Status(), ctime(&creaTime));
+    printf("%d\t%d\t%d\t%d\t%s\t%s\n", threadId, userId, priority, usedCpuTime, Status(), ctime(&creaTime));
 }
 
 void 
@@ -79,6 +79,18 @@ int
 Thread::Priority()
 {
 	return priority;
+}
+
+void
+Thread::AddCpuTime()
+{
+	usedCpuTime += TimerTicks;	
+}
+
+int 
+Thread::UsedCpuTime()
+{
+	return usedCpuTime;
 }
 
 int allocThreadId() {
@@ -113,6 +125,7 @@ Thread::InitThread(char* threadName, int prio)
 	
 	setPriority(prio);
 
+	usedCpuTime = 0;
     name = threadName;
     stackTop = NULL;
     stack = NULL;

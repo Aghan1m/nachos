@@ -28,7 +28,7 @@ extern int threadPool[MaxThreadNum];
 extern Thread* threadPtrPool[MaxThreadNum];
 
 // lab2
-enum SchedulerStrategy { SCHED_FIFO, SCHED_PRIORITY} ;
+enum SchedulerStrategy { SCHED_FIFO, SCHED_PRIORITY, SCHED_RR } ;
 extern SchedulerStrategy CurrentSchedStrategy;
 
 extern Thread *currentThread;			// the thread holding the CPU

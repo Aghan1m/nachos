@@ -58,11 +58,18 @@ Scheduler::ReadyToRun (Thread *thread)
     DEBUG('t', "Putting thread %s on ready list.\n", thread->getName());
 
 	switch (CurrentSchedStrategy) {
+		// PRIO
 		case 1:
     		thread->setStatus(READY);
     		readyList->SortedInsert((void *)thread, thread->Priority());
 			break;
 		
+		// RR casue timer is a simulator not a real clock, so manual simulate clock interrupt. Same as FIFO.
+		case 2:
+    		thread->setStatus(READY);
+    		readyList->Append((void *)thread);
+			break;
+
 		// FIFO
 		default:
 			thread->setStatus(READY);
@@ -116,6 +123,9 @@ Scheduler::Run (Thread *nextThread)
 
     currentThread = nextThread;		    // switch to the next thread
     currentThread->setStatus(RUNNING);      // nextThread is now running
+	
+//lab2
+	currentThread->AddCpuTime();
     
     DEBUG('t', "Switching from thread \"%s\" to thread \"%s\"\n",
 	  oldThread->getName(), nextThread->getName());

@@ -83,6 +83,7 @@ class Thread {
 
   public:
     Thread(char* debugName);		// initialize a Thread 
+	Thread(char* debugName, int prio);
     ~Thread(); 				// deallocate a Thread
 					// NOTE -- thread being deleted
 					// must not be running when delete 
@@ -109,12 +110,18 @@ class Thread {
     time_t CreateTime();
     void ShowThread();
     char* Status();
+// lab2
+	void setPriority(int prio);
+	int Priority();
+	void InitThread(char* threadName, int prio);
 
   private:
 // lab1
     int threadId;
     int userId;
     time_t creaTime;
+// lab2
+	int priority;
 
     // some of the private data for this class is listed above
     int* stack; 	 		// Bottom of the stack 

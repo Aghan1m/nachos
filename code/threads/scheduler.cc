@@ -50,13 +50,25 @@ Scheduler::~Scheduler()
 //	"thread" is the thread to be put on the ready list.
 //----------------------------------------------------------------------
 
+ 
+// enum SchedulerStrategy { SCHED_FIFO, SCHED_PRIORITY} ;
 void
 Scheduler::ReadyToRun (Thread *thread)
 {
     DEBUG('t', "Putting thread %s on ready list.\n", thread->getName());
 
-    thread->setStatus(READY);
-    readyList->Append((void *)thread);
+	switch (CurrentSchedStrategy) {
+		case 1:
+    		thread->setStatus(READY);
+    		readyList->SortedInsert((void *)thread, thread->Priority());
+			break;
+		
+		// FIFO
+		default:
+			thread->setStatus(READY);
+    		readyList->Append((void *)thread);
+			break;
+	}
 }
 
 //----------------------------------------------------------------------

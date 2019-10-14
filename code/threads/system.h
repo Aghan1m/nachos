@@ -21,9 +21,15 @@ extern void Initialize(int argc, char **argv); 	// Initialization,
 						// called before anything else
 extern void Cleanup();				// Cleanup, called when
 						// Nachos is done.
+						//
+// lab1
 #define MaxThreadNum 128
 extern int threadPool[MaxThreadNum];
 extern Thread* threadPtrPool[MaxThreadNum];
+
+// lab2
+enum SchedulerStrategy { SCHED_FIFO, SCHED_PRIORITY} ;
+extern SchedulerStrategy CurrentSchedStrategy;
 
 extern Thread *currentThread;			// the thread holding the CPU
 extern Thread *threadToBeDestroyed;  		// the thread that just finished

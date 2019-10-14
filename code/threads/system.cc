@@ -11,6 +11,8 @@
 int threadPool[MaxThreadNum];
 Thread* threadPtrPool[MaxThreadNum];
 
+SchedulerStrategy CurrentSchedStrategy;
+
 // This defines *all* of the global data structures used by Nachos.
 // These are all initialized and de-allocated by this file.
 
@@ -90,6 +92,9 @@ Initialize(int argc, char **argv)
 		threadPool[i] = 0;
 		threadPtrPool[i] = NULL;
 	}
+
+	//lab2: init scheduler strategy
+	CurrentSchedStrategy = SCHED_FIFO;
 
 #ifdef USER_PROGRAM
     bool debugUserProg = FALSE;	// single step user program

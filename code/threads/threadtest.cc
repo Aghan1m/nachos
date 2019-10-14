@@ -17,6 +17,9 @@
 void MaxThreadTest();
 void TsTest();
 
+//lab2
+void SchedPriorityTest();
+
 // testnum is set in main.cc
 int testnum = 1;
 
@@ -69,12 +72,19 @@ ThreadTest()
     case 1:
     ThreadTest1();
     break;
+
     case 2:
     MaxThreadTest();
     break;
+
     case 3:
     TsTest();
     break;
+
+	case 4:
+	SchedPriorityTest();
+	break;
+
     default:
 	printf("No test specified.\n");
 	break;
@@ -98,7 +108,7 @@ MaxThreadTest()
 void
 TS()
 {
-    printf("Tid\tUid\tStatus\tTime\n");
+    printf("Tid\tUid\tPriority\tStatus\tTime\n");
     for(int i=0; i<MaxThreadNum; i++)
     {
         if(threadPool[i]) 
@@ -123,4 +133,25 @@ TsTest()
         Thread *t = new Thread("forked thread");
     }
     TS();
+}
+
+// lab2: priority scheduler
+void
+SchedPriorityTest()
+{
+	DEBUG('t', "Entering SchedPriorityTest");
+
+	CurrentSchedStrategy = SCHED_PRIORITY;
+
+	Thread *t1 = new Thread("forked thread", 1);
+	Thread *t2 = new Thread("forked thread", 3);
+	Thread *t3 = new Thread("forked thread", 2);
+	Thread *t4 = new Thread("forked thread", 0);
+	Thread *t5 = new Thread("forked thread", 5);
+
+    t1->Fork(SimpleThread, (void*)1);
+    t2->Fork(SimpleThread, (void*)2);
+    t3->Fork(SimpleThread, (void*)3);
+    t4->Fork(SimpleThread, (void*)4);
+    t5->Fork(SimpleThread, (void*)5);
 }

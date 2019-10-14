@@ -26,6 +26,10 @@
 
 // lab1: add userId and threadId
 #define INVALID_TID -1
+
+// lab2: priority
+#define DEFAULT_PRIO 9
+
 Thread::UserId()
 {
     return userId;
@@ -62,7 +66,19 @@ Thread::Status()
 void 
 Thread::ShowThread()
 {
-    printf("%d\t%d\t%s\t%s\n", threadId, userId, Status(), ctime(&creaTime));
+    printf("%d\t%d\t%d\t%s\t%s\n", threadId, userId, priority, Status(), ctime(&creaTime));
+}
+
+void 
+Thread::setPriority(int prio)
+{
+	priority = prio;
+}
+
+int 
+Thread::Priority()
+{
+	return priority;
 }
 
 int allocThreadId() {
@@ -82,11 +98,11 @@ int allocThreadId() {
 //
 //	"threadName" is an arbitrary string, useful for debugging.
 //----------------------------------------------------------------------
-//
-Thread::Thread(char* threadName)
+
+void 
+Thread::InitThread(char* threadName, int prio)
 {
 	threadId = allocThreadId();
-
 	if(threadId == INVALID_TID) {
         printf("Sorry, threadpool have no available thread, max thread number is: %d \n", MaxThreadNum);
     }
@@ -94,6 +110,8 @@ Thread::Thread(char* threadName)
 
 	threadPtrPool[threadId] = this;
     time(&creaTime);
+	
+	setPriority(prio);
 
     name = threadName;
     stackTop = NULL;
@@ -104,11 +122,22 @@ Thread::Thread(char* threadName)
 #endif
 }
 
+Thread::Thread(char* threadName)
+{
+	InitThread(threadName, DEFAULT_PRIO);
+}
+
+Thread::Thread(char* threadName, int prio)
+{
+	InitThread(threadName, prio);
+}
+
 //----------------------------------------------------------------------
 // Thread::~Thread
 // 	De-allocate a thread.
 //
 // 	NOTE: the current thread *cannot* delete itself directly,
+//
 //	since it is still running on the stack that we need to delete.
 //
 //      NOTE: if this is the main thread, we can't delete the stack
@@ -244,9 +273,10 @@ Thread::Yield ()
     
     DEBUG('t', "Yielding thread \"%s\"\n", getName());
     
+	scheduler->ReadyToRun(this);
     nextThread = scheduler->FindNextToRun();
     if (nextThread != NULL) {
-	scheduler->ReadyToRun(this);
+//	scheduler->ReadyToRun(this);
 	scheduler->Run(nextThread);
     }
     (void) interrupt->SetLevel(oldLevel);

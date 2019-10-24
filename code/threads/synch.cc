@@ -100,13 +100,74 @@ Semaphore::V()
 // Dummy functions -- so we can compile our later assignments 
 // Note -- without a correct implementation of Condition::Wait(), 
 // the test case in the network assignment won't work!
-Lock::Lock(char* debugName) {}
-Lock::~Lock() {}
-void Lock::Acquire() {}
-void Lock::Release() {}
+Lock::Lock(char* debugName) {
+	name = debugName;
+	owner = NULL;
+	lock = new Semaphore("lock", 1);
+}
 
-Condition::Condition(char* debugName) { }
-Condition::~Condition() { }
-void Condition::Wait(Lock* conditionLock) { ASSERT(FALSE); }
-void Condition::Signal(Lock* conditionLock) { }
-void Condition::Broadcast(Lock* conditionLock) { }
+Lock::~Lock() {
+	delete lock;
+}
+
+//lab3: atomic operate
+void Lock::Acquire() {
+	IntStatus oldLevel = interrupt->SetLevel(IntOff);
+	lock->P();
+	owner = currentThread;
+	(void) interrupt->SetLevel(oldLevel);
+}
+
+void Lock::Release() {
+	IntStatus oldLevel = interrupt->SetLevel(IntOff);
+	ASSERT(isHeldByCurrentThread());
+	lock->V();
+	owner = NULL;
+	(void) interrupt->SetLevel(oldLevel);
+}
+
+bool Lock::isHeldByCurrentThread() {
+	return currentThread == owner;
+}
+
+Condition::Condition(char* debugName) {
+	name = debugName;
+	queue = new List();
+}
+
+Condition::~Condition() {
+	delete queue;
+}
+
+// lab3: close interrupt -> release lock -> add to wait queue -> sleep and run next -> wakeup and acquire lock -> open interrupt
+void Condition::Wait(Lock* conditionLock) { 
+	// ASSERT(FALSE); 
+	IntStatus oldLevel = interrupt->SetLevel(IntOff);
+	ASSERT(conditionLock->isHeldByCurrentThread());
+	conditionLock->Release();
+	queue->Append(currentThread);
+	currentThread->Sleep();
+	conditionLock->Acquire();
+	(void) interrupt->SetLevel(oldLevel);
+}
+
+// signal next thread to run
+void Condition::Signal(Lock* conditionLock) {
+	IntStatus oldLevel = interrupt->SetLevel(IntOff);
+	ASSERT(conditionLock->isHeldByCurrentThread());
+	if(!queue->IsEmpty()) {
+		Thread* next = (Thread*)queue->Remove();
+		scheduler->ReadyToRun(next);
+	}
+	(void) interrupt->SetLevel(oldLevel);
+}
+
+// broadcast all thread in queue
+void Condition::Broadcast(Lock* conditionLock) { 
+	IntStatus oldLevel = interrupt->SetLevel(IntOff);
+	ASSERT(conditionLock->isHeldByCurrentThread());
+	if(!queue->IsEmpty()) {
+		Signal(conditionLock);
+	}
+	(void) interrupt->SetLevel(oldLevel);
+}

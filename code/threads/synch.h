@@ -31,8 +31,7 @@
 // Note that the interface does *not* allow a thread to read the value of 
 // the semaphore directly -- even if you did read the value, the
 // only thing you would know is what the value used to be.  You don't
-// know what the value is now, because by the time you get the value
-// into a register, a context switch might have occurred,
+// know what the value is now, because by the time you get the value // into a register, a context switch might have occurred,
 // and some other thread might have called P or V, so the true value might
 // now be different.
 
@@ -80,6 +79,9 @@ class Lock {
   private:
     char* name;				// for debugging
     // plus some other stuff you'll need to define
+    // lab3
+    Thread* owner;
+	Semaphore *lock;
 };
 
 // The following class defines a "condition variable".  A condition
@@ -132,5 +134,7 @@ class Condition {
   private:
     char* name;
     // plus some other stuff you'll need to define
+    // lab3
+    List* queue;
 };
 #endif // SYNCH_H

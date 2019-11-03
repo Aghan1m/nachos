@@ -166,7 +166,7 @@ void Condition::Signal(Lock* conditionLock) {
 void Condition::Broadcast(Lock* conditionLock) { 
 	IntStatus oldLevel = interrupt->SetLevel(IntOff);
 	ASSERT(conditionLock->isHeldByCurrentThread());
-	if(!queue->IsEmpty()) {
+	while(!queue->IsEmpty()) {
 		Signal(conditionLock);
 	}
 	(void) interrupt->SetLevel(oldLevel);

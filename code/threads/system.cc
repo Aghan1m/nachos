@@ -13,6 +13,18 @@ Thread* threadPtrPool[MaxThreadNum];
 
 SchedulerStrategy CurrentSchedStrategy;
 
+Semaphore* mutex;
+Semaphore* empty;
+Semaphore* full;
+
+Condition* consumerCondition;
+Condition* producerCondition;
+Lock* pcLock;
+int currentSyncNum;
+
+Condition* barrierCondition;
+Lock* barrierLock;
+
 // This defines *all* of the global data structures used by Nachos.
 // These are all initialized and de-allocated by this file.
 
@@ -95,6 +107,19 @@ Initialize(int argc, char **argv)
 
 	//lab2: init scheduler strategy
 	CurrentSchedStrategy = SCHED_FIFO;
+
+	//lab3: init semaphore
+	mutex = new Semaphore("mutex", 1);
+	empty = new Semaphore("empty", MAX_BUFFER_SIZE);
+	full = new Semaphore("full", 0);
+
+	consumerCondition = new Condition("ConsumerCondition");
+	producerCondition = new Condition("ProducerCondition");
+	pcLock = new Lock("producer_consumer_lock");
+	currentSyncNum = 0;
+
+	barrierCondition = new Condition("BarrierCondition");
+	barrierLock = new Lock("producer_consumer_lock");
 
 #ifdef USER_PROGRAM
     bool debugUserProg = FALSE;	// single step user program

@@ -1,58 +1,59 @@
-*** thread 1 looped 0 times currentTimerTicks 30 usedCpuTime 20
-*** thread 1 looped 1 times currentTimerTicks 70 usedCpuTime 40
-*** thread 2 looped 0 times currentTimerTicks 90 usedCpuTime 20
-*** thread 1 looped 2 times currentTimerTicks 130 usedCpuTime 60
-*** thread 2 looped 1 times currentTimerTicks 150 usedCpuTime 40
-*** thread 3 looped 0 times currentTimerTicks 170 usedCpuTime 20
-*** thread 1 looped 3 times currentTimerTicks 210 usedCpuTime 80
-*** thread 2 looped 2 times currentTimerTicks 230 usedCpuTime 60
-*** thread 3 looped 1 times currentTimerTicks 250 usedCpuTime 40
-*** thread 4 looped 0 times currentTimerTicks 270 usedCpuTime 20
-*** thread 1 looped 4 times currentTimerTicks 310 usedCpuTime 100
-*** thread 2 looped 3 times currentTimerTicks 330 usedCpuTime 80
-*** thread 3 looped 2 times currentTimerTicks 350 usedCpuTime 60
-*** thread 4 looped 1 times currentTimerTicks 370 usedCpuTime 40
-*** thread 5 looped 0 times currentTimerTicks 390 usedCpuTime 20
-*** thread 2 looped 4 times currentTimerTicks 430 usedCpuTime 100
-*** thread 3 looped 3 times currentTimerTicks 450 usedCpuTime 80
-*** thread 4 looped 2 times currentTimerTicks 470 usedCpuTime 60
-*** thread 5 looped 1 times currentTimerTicks 490 usedCpuTime 40
-*** thread 1 looped 5 times currentTimerTicks 510 usedCpuTime 140
-*** thread 2 looped 5 times currentTimerTicks 530 usedCpuTime 120
-*** thread 3 looped 4 times currentTimerTicks 550 usedCpuTime 100
-*** thread 4 looped 3 times currentTimerTicks 570 usedCpuTime 80
-*** thread 5 looped 2 times currentTimerTicks 590 usedCpuTime 60
-*** thread 1 looped 6 times currentTimerTicks 610 usedCpuTime 160
-*** thread 2 looped 6 times currentTimerTicks 630 usedCpuTime 140
-*** thread 3 looped 5 times currentTimerTicks 650 usedCpuTime 120
-*** thread 4 looped 4 times currentTimerTicks 670 usedCpuTime 100
-*** thread 5 looped 3 times currentTimerTicks 690 usedCpuTime 80
-*** thread 1 looped 7 times currentTimerTicks 710 usedCpuTime 180
-*** thread 2 looped 7 times currentTimerTicks 730 usedCpuTime 160
-*** thread 3 looped 6 times currentTimerTicks 750 usedCpuTime 140
-*** thread 4 looped 5 times currentTimerTicks 770 usedCpuTime 120
-*** thread 5 looped 4 times currentTimerTicks 790 usedCpuTime 100
-*** thread 1 looped 8 times currentTimerTicks 810 usedCpuTime 200
-*** thread 2 looped 8 times currentTimerTicks 830 usedCpuTime 180
-*** thread 3 looped 7 times currentTimerTicks 850 usedCpuTime 160
-*** thread 4 looped 6 times currentTimerTicks 870 usedCpuTime 140
-*** thread 5 looped 5 times currentTimerTicks 890 usedCpuTime 120
-*** thread 1 looped 9 times currentTimerTicks 910 usedCpuTime 220
-*** thread 2 looped 9 times currentTimerTicks 930 usedCpuTime 200
-*** thread 3 looped 8 times currentTimerTicks 950 usedCpuTime 180
-*** thread 4 looped 7 times currentTimerTicks 970 usedCpuTime 160
-*** thread 5 looped 6 times currentTimerTicks 990 usedCpuTime 140
-*** thread 3 looped 9 times currentTimerTicks 1030 usedCpuTime 200
-*** thread 4 looped 8 times currentTimerTicks 1050 usedCpuTime 180
-*** thread 5 looped 7 times currentTimerTicks 1070 usedCpuTime 160
-*** thread 4 looped 9 times currentTimerTicks 1110 usedCpuTime 200
-*** thread 5 looped 8 times currentTimerTicks 1130 usedCpuTime 180
-*** thread 5 looped 9 times currentTimerTicks 1170 usedCpuTime 200
+producer thread producer1 producing! now buffer number is:0 
+producer thread producer1 produce completed! now buffer number is:1 
+producer thread producer2 producing! now buffer number is:1 
+producer thread producer2 produce completed! now buffer number is:2 
+producer thread producer2 producing! now buffer number is:2 
+producer thread producer2 produce completed! now buffer number is:3 
+consumer thread consumer1 consuming! now buffer number is:3 
+consumer thread consumer1 consume completed! now buffer number is:2 
+consumer thread consumer1 consuming! now buffer number is:2 
+consumer thread consumer1 consume completed! now buffer number is:1 
+producer thread producer1 producing! now buffer number is:1 
+producer thread producer1 produce completed! now buffer number is:2 
+producer thread producer1 producing! now buffer number is:2 
+producer thread producer1 produce completed! now buffer number is:3 
+producer thread producer2 producing! now buffer number is:3 
+producer thread producer2 produce completed! now buffer number is:4 
+producer thread producer2 producing! now buffer number is:4 
+producer thread producer2 produce completed! now buffer number is:5 
+consumer thread consumer1 consuming! now buffer number is:5 
+consumer thread consumer1 consume completed! now buffer number is:4 
+consumer thread consumer1 consuming! now buffer number is:4 
+consumer thread consumer1 consume completed! now buffer number is:3 
+consumer thread consumer2 consuming! now buffer number is:3 
+consumer thread consumer2 consume completed! now buffer number is:2 
+consumer thread consumer2 consuming! now buffer number is:2 
+consumer thread consumer2 consume completed! now buffer number is:1 
+consumer thread consumer2 consuming! now buffer number is:1 
+consumer thread consumer2 consume completed! now buffer number is:0 
+consumer thread consumer1 consuming! But buffer is empty! buffer number is:0 
+consumer thread consumer2 consuming! But buffer is empty! buffer number is:0 
+consumer thread consumer1 consuming! But buffer is empty! buffer number is:0 
+producer thread producer1 producing! now buffer number is:0 
+producer thread producer1 produce completed! now buffer number is:1 
+producer thread producer1 producing! now buffer number is:1 
+producer thread producer1 produce completed! now buffer number is:2 
+producer thread producer1 producing! now buffer number is:2 
+producer thread producer1 produce completed! now buffer number is:3 
+consumer thread consumer2 consuming! now buffer number is:3 
+consumer thread consumer2 consume completed! now buffer number is:2 
+consumer thread consumer2 consuming! now buffer number is:2 
+consumer thread consumer2 consume completed! now buffer number is:1 
+consumer thread consumer1 consuming! now buffer number is:1 
+consumer thread consumer1 consume completed! now buffer number is:0 
+producer thread producer1 producing! now buffer number is:0 
+producer thread producer1 produce completed! now buffer number is:1 
+producer thread producer1 producing! now buffer number is:1 
+producer thread producer1 produce completed! now buffer number is:2 
+consumer thread consumer2 consuming! now buffer number is:2 
+consumer thread consumer2 consume completed! now buffer number is:1 
+consumer thread consumer1 consuming! now buffer number is:1 
+consumer thread consumer1 consume completed! now buffer number is:0 
 No threads ready or runnable, and no pending interrupts.
 Assuming the program completed.
 Machine halting!
 
-Ticks: total 1220, idle 10, system 1210, user 0
+Ticks: total 1200, idle 10, system 1190, user 0
 Disk I/O: reads 0, writes 0
 Console I/O: reads 0, writes 0
 Paging: faults 0

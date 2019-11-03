@@ -21,6 +21,17 @@ void TsTest();
 void SchedPriorityTest();
 void SchedRRTest();
 
+//lab3
+void ProducerConsumerSemaphoreTest();
+void ProducerConsumerConditionTest();
+void produce_sema(int n);
+void consume_sema(int n);
+void produce_cond(int n);
+void consume_cond(int n);
+void barrierFun(int num);
+void BarrierTest();
+int barrierCount = 0;
+
 // testnum is set in main.cc
 int testnum = 1;
 
@@ -91,6 +102,18 @@ ThreadTest()
 
 	case 5:
 	SchedRRTest();
+	break;
+
+	case 6:
+	ProducerConsumerSemaphoreTest();
+	break;
+
+	case 7:
+	ProducerConsumerConditionTest();
+	break;
+
+	case 8:
+	BarrierTest();
 	break;
 
     default:
@@ -182,4 +205,144 @@ SchedRRTest()
     t3->Fork(SimpleThread, (void*)3);
     t4->Fork(SimpleThread, (void*)4);
     t5->Fork(SimpleThread, (void*)5);
+}
+
+// lab3: producer and consumer test
+//#define MAX_BUFFER_SIZE 6
+int buffer = 0;
+
+void
+ProducerConsumerSemaphoreTest() 
+{
+	Thread* producer1 = new Thread("producer1");
+	Thread* producer2 = new Thread("producer2");
+	Thread* consumer1 = new Thread("consumer1");
+	Thread* consumer2 = new Thread("consumer2");
+	
+	producer1->Fork(produce_sema, 8);
+	producer2->Fork(produce_sema, 4);
+	consumer1->Fork(consume_sema, 6);
+	consumer2->Fork(consume_sema, 6);
+}
+
+
+
+void
+produce_sema(int n)
+{
+	while(n>0) {
+		if(buffer < MAX_BUFFER_SIZE) {
+			empty->P();
+			mutex->P();
+			printf("producer thread %s producing! now buffer number is:%d \n", currentThread->getName(), buffer);
+			buffer ++;
+			n --;
+			printf("producer thread %s produce completed! now buffer number is:%d \n", currentThread->getName(), buffer);
+			full->V();
+			mutex->V();
+		} else {
+			printf("producer thread %s producing! But buffer is full! buffer number is:%d \n", currentThread->getName(), buffer);
+			currentThread->Yield();
+		}
+	}
+	
+}
+
+void 
+consume_sema(int n)
+{
+	while(n>0) {
+		if(buffer > 0) {
+			full->P();
+			mutex->P();
+			printf("consumer thread %s consuming! now buffer number is:%d \n", currentThread->getName(), buffer);
+			buffer --;
+			n --;
+			printf("consumer thread %s consume completed! now buffer number is:%d \n", currentThread->getName(), buffer);
+			empty->V();
+			mutex->V();
+		} else {
+			printf("consumer thread %s consuming! But buffer is empty! buffer number is:%d \n", currentThread->getName(), buffer);
+			currentThread->Yield();
+		}
+	}
+}
+
+void
+ProducerConsumerConditionTest() 
+{
+	Thread* producer1 = new Thread("producer1");
+	Thread* producer2 = new Thread("producer2");
+	Thread* consumer1 = new Thread("consumer1");
+	Thread* consumer2 = new Thread("consumer2");
+	
+	producer1->Fork(produce_cond, 6);
+	producer2->Fork(produce_cond, 4);
+	consumer1->Fork(consume_cond, 6);
+	consumer2->Fork(consume_cond, 6);
+}
+
+void
+produce_cond(int n)
+{
+	while(true) {
+		pcLock->Acquire();
+		while(currentSyncNum >= MAX_BUFFER_SIZE) {
+			printf("producer thread %s producing! But sync number is full! sync number is:%d \n", currentThread->getName(), currentSyncNum);
+			producerCondition->Wait(pcLock);	
+		}
+
+		printf("producer thread %s producing! now sync number is:%d \n", currentThread->getName(), currentSyncNum);
+		currentSyncNum ++;
+		printf("producer thread %s produce completed! now sync number is:%d \n", currentThread->getName(), currentSyncNum);
+		// inform thread waiting for consuming
+		consumerCondition->Signal(pcLock);
+		pcLock->Release();
+	}
+	
+}
+
+void 
+consume_cond(int n)
+{
+	while(true) {
+		pcLock->Acquire();
+		while(currentSyncNum <= 0) {
+			printf("producer thread %s producing! But sync number is empty! sync number is:%d \n", currentThread->getName(), currentSyncNum);
+			producerCondition->Wait(pcLock);	
+		}
+		printf("consumer thread %s consuming! now sync number is:%d \n", currentThread->getName(), currentSyncNum);
+		currentSyncNum --;
+		printf("consumer thread %s consume completed! now sync number is:%d \n", currentThread->getName(), currentSyncNum);
+		// inform thread waiting for producing 
+		producerCondition->Signal(pcLock);
+		pcLock->Release();
+	}
+	
+}
+
+void
+BarrierTest()
+{
+	for(int i=0; i<MAX_BARRIER_COUNT; i++) {
+		Thread* t = new Thread("barrierThread");
+		t->Fork(barrierFun, i+1);
+	}	
+}
+
+void 
+barrierFun(int num)
+{
+	barrierLock->Acquire();
+	barrierCount ++;
+	if(barrierCount == MAX_BARRIER_COUNT) {
+		printf("threadName:%s%d, barrierCount:%d, requireCount:%d, Broadcast all threads.\n", currentThread->getName(), num, barrierCount, MAX_BARRIER_COUNT);
+		barrierCondition->Broadcast(barrierLock);
+		barrierLock->Release();
+	} else {
+		printf("threadName:%s%d, barrierCount:%d, requireCount:%d, Wait for signal.\n", currentThread->getName(), num, barrierCount, MAX_BARRIER_COUNT);
+		barrierCondition->Wait(barrierLock);
+		barrierLock->Release();
+	}
+	printf("threadName:%s%d, wake up, continue.\n", currentThread->getName(), num);
 }

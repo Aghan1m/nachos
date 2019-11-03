@@ -15,6 +15,7 @@
 #include "interrupt.h"
 #include "stats.h"
 #include "timer.h"
+#include "synch.h"
 
 // Initialization and cleanup routines
 extern void Initialize(int argc, char **argv); 	// Initialization,
@@ -30,6 +31,20 @@ extern Thread* threadPtrPool[MaxThreadNum];
 // lab2
 enum SchedulerStrategy { SCHED_FIFO, SCHED_PRIORITY, SCHED_RR } ;
 extern SchedulerStrategy CurrentSchedStrategy;
+
+// lab3
+#define MAX_BUFFER_SIZE 6
+#define MAX_BARRIER_COUNT 6
+extern Semaphore* mutex;
+extern Semaphore* empty;
+extern Semaphore* full;
+
+extern Condition* consumerCondition;
+extern Condition* producerCondition;
+extern Lock* pcLock;
+extern int currentSyncNum;
+extern Condition* barrierCondition;
+extern Lock* barrierLock;
 
 extern Thread *currentThread;			// the thread holding the CPU
 extern Thread *threadToBeDestroyed;  		// the thread that just finished

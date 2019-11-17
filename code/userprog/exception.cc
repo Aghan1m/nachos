@@ -25,6 +25,18 @@
 #include "system.h"
 #include "syscall.h"
 
+int TlbReplaceIdx = 0;
+
+void
+TLBMissHandler(int virtAddr)
+{
+	unsigned int vpn;
+	vpn = (unsigned) virtAddr/PageSize;
+	machine->tlb[TlbReplaceIdx] = machine->pageTable[vpn];
+	TlbReplaceIdx = TlbReplaceIdx?0:1;
+
+}
+
 //----------------------------------------------------------------------
 // ExceptionHandler
 // 	Entry point into the Nachos kernel.  Called when a user program
@@ -51,13 +63,28 @@
 void
 ExceptionHandler(ExceptionType which)
 {
-    int type = machine->ReadRegister(2);
+	// lab vm: Page Fault handle
+	if(which == PageFaultException) {
+		if(machine->tlb==NULL) {
+			DEBUG('m', "=> PageTable Page Fault.\n");
+			ASSERT(FALSE);
+		} else { // lab vm: tlb miss
+			DEBUG('m', "=> TLB Miss. \n");
+			int BadVAddr = machine->ReadRegister(BadVAddrReg);
+			TLBMissHandler(BadVAddr);
+		}
+		return;
+	}
+   
+	int type = machine->ReadRegister(2);
 
     if ((which == SyscallException) && (type == SC_Halt)) {
-	DEBUG('a', "Shutdown, initiated by user program.\n");
+    DEBUG('a', "Shutdown, initiated by user program.\n");
    	interrupt->Halt();
     } else {
-	printf("Unexpected user mode exception %d %d\n", which, type);
-	ASSERT(FALSE);
+    printf("Unexpected user mode exception %d %d\n", which, type);
+    ASSERT(FALSE);
     }
 }
+
+

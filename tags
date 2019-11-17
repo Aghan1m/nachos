@@ -47,7 +47,7 @@ B	code/test/matmult.c	/^int B[Dim][Dim];$/;"	v
 BCOND	code/machine/mipssim.h	106;"	d
 BITMAP_H	code/userprog/bitmap.h	16;"	d
 BLOCKED	code/threads/thread.h	/^enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED };$/;"	e	enum:ThreadStatus
-BadVAddrReg	code/machine/machine.h	70;"	d
+BadVAddrReg	code/machine/machine.h	73;"	d
 BarrierTest	code/threads/threadtest.cc	/^BarrierTest()$/;"	f
 Basic Concepts	c++example/c++.tex	/^\\section{Basic Concepts}$/;"	s
 BitMap	code/userprog/bitmap.cc	/^BitMap::BitMap(int nitems) $/;"	f	class:BitMap
@@ -235,7 +235,7 @@ Halt	code/machine/interrupt.cc	/^Interrupt::Halt()$/;"	f	class:Interrupt
 Halt	code/test/start.s	/^Halt:$/;"	l
 HandleInterrupt	code/machine/disk.cc	/^Disk::HandleInterrupt ()$/;"	f	class:Disk
 HandleInterrupt	code/machine/elevator.cc	/^ElevatorBank::HandleInterrupt() {$/;"	f	class:ElevatorBank
-HiReg	code/machine/machine.h	63;"	d
+HiReg	code/machine/machine.h	66;"	d
 I0	code/threads/switch.h	67;"	d
 I1	code/threads/switch.h	68;"	d
 I2	code/threads/switch.h	69;"	d
@@ -399,9 +399,9 @@ ListElement	code/threads/list.h	/^class ListElement {$/;"	c
 ListOfEvents	code/machine/elevator.h	/^typedef List ListOfEvents;$/;"	t
 ListStack	c++example/inheritstack.cc	/^ListStack::ListStack() : Stack() {$/;"	f	class:ListStack
 ListStack	c++example/inheritstack.h	/^class ListStack : public Stack {$/;"	c
-LoReg	code/machine/machine.h	64;"	d
-LoadReg	code/machine/machine.h	68;"	d
-LoadValueReg	code/machine/machine.h	69;"	d
+LoReg	code/machine/machine.h	67;"	d
+LoadReg	code/machine/machine.h	71;"	d
+LoadValueReg	code/machine/machine.h	72;"	d
 Lock	code/threads/synch.cc	/^Lock::Lock(char* debugName) {$/;"	f	class:Lock
 Lock	code/threads/synch.h	/^class Lock {$/;"	c
 Lseek	code/machine/sysdep.cc	/^Lseek(int fd, int offset, int whence)$/;"	f
@@ -450,7 +450,7 @@ MaxRiders	code/machine/elevator.h	/^const int MaxRiders = 4;	\/\/ carrying capac
 MaxThreadNum	code/threads/system.h	27;"	d
 MaxThreadTest	code/threads/threadtest.cc	/^MaxThreadTest()$/;"	f
 MaxWireSize	code/machine/network.h	40;"	d
-MemorySize	code/machine/machine.h	36;"	d
+MemorySize	code/machine/machine.h	39;"	d
 ModuloDiff	code/machine/disk.cc	/^Disk::ModuloDiff(int to, int from)$/;"	f	class:Disk
 MoveTo	code/machine/elevator.cc	/^    bool MoveTo(int goingToFloor) {$/;"	f	class:ElevatorInfo
 MoveTo	code/machine/elevator.cc	/^ElevatorBank::MoveTo(int goingToFloor, int elevator)$/;"	f	class:ElevatorBank
@@ -474,7 +474,7 @@ NetworkRecvInt	code/machine/interrupt.h	/^				ElevatorInt, NetworkSendInt, Netwo
 NetworkSendDone	code/machine/network.cc	/^static void NetworkSendDone(int arg)$/;"	f	file:
 NetworkSendInt	code/machine/interrupt.h	/^				ElevatorInt, NetworkSendInt, NetworkRecvInt};$/;"	e	enum:IntType
 NetworkTime	code/machine/stats.h	57;"	d
-NextPCReg	code/machine/machine.h	66;"	d
+NextPCReg	code/machine/machine.h	69;"	d
 NoEvent	code/machine/elevator.h	/^enum ElevatorEvent { NoEvent, DoorsOpened, UpButtonPressed, $/;"	e	enum:ElevatorEvent
 NoException	code/machine/machine.h	/^enum ExceptionType { NoException,           \/\/ Everything ok!$/;"	e	enum:ExceptionType
 NoffHeader	code/bin/noff.h	/^} NoffHeader;$/;"	t	typeref:struct:noffHeader
@@ -482,11 +482,11 @@ NumClear	code/userprog/bitmap.cc	/^BitMap::NumClear() $/;"	f	class:BitMap
 NumDirEntries	code/filesys/filesys.cc	64;"	d	file:
 NumDirect	code/filesys/filehdr.h	20;"	d
 NumExceptionTypes	code/machine/machine.h	/^		     NumExceptionTypes$/;"	e	enum:ExceptionType
-NumGPRegs	code/machine/machine.h	62;"	d
+NumGPRegs	code/machine/machine.h	65;"	d
 NumInList	code/threads/list.h	/^    unsigned int NumInList() { return numInList;};$/;"	f	class:List
-NumPhysPages	code/machine/machine.h	35;"	d
+NumPhysPages	code/machine/machine.h	38;"	d
 NumSectors	code/machine/disk.h	52;"	d
-NumTotalRegs	code/machine/machine.h	72;"	d
+NumTotalRegs	code/machine/machine.h	75;"	d
 NumTracks	code/machine/disk.h	51;"	d
 OMAGIC	code/bin/coff.h	17;"	d
 OPENFILE_H	code/filesys/openfile.h	21;"	d
@@ -573,7 +573,7 @@ PATH	code/test/Makefile	/^PATH = $(GCCDIR):\/lib:\/usr\/bin:\/bin$/;"	m
 PC	code/threads/switch.h	113;"	d
 PC	code/threads/switch.h	38;"	d
 PC	code/threads/switch.h	78;"	d
-PCReg	code/machine/machine.h	65;"	d
+PCReg	code/machine/machine.h	68;"	d
 PCState	code/threads/switch.h	121;"	d
 PCState	code/threads/switch.h	142;"	d
 PCState	code/threads/switch.h	55;"	d
@@ -584,7 +584,7 @@ PRIV_LEV	code/threads/switch.c	/^	.EXPORT ThreadRoot,ENTRY,PRIV_LEV=3,RTNVAL=GR$
 PacketHeader	code/machine/network.h	/^class PacketHeader {$/;"	c
 PacketSent	code/network/post.cc	/^PostOffice::PacketSent()$/;"	f	class:PostOffice
 PageFaultException	code/machine/machine.h	/^		     PageFaultException,    \/\/ No valid translation found$/;"	e	enum:ExceptionType
-PageSize	code/machine/machine.h	31;"	d
+PageSize	code/machine/machine.h	34;"	d
 PendingElevatorEvent	code/machine/elevator.cc	/^    PendingElevatorEvent(ElevatorEvent ev, int fl, int el) {$/;"	f	class:PendingElevatorEvent
 PendingElevatorEvent	code/machine/elevator.cc	/^class PendingElevatorEvent {$/;"	c	file:
 PendingInterrupt	code/machine/interrupt.cc	/^PendingInterrupt::PendingInterrupt(VoidFunctionPtr func, int param, int time, $/;"	f	class:PendingInterrupt
@@ -605,7 +605,7 @@ Prepend	c++example/list.cc	/^List::Prepend(int value) {$/;"	f	class:List
 Prepend	code/threads/list.cc	/^List::Prepend(void *item)$/;"	f	class:List
 PressButton	code/machine/elevator.cc	/^ElevatorBank::PressButton(int onFloor, Direction goingTo)$/;"	f	class:ElevatorBank
 PressFloor	code/machine/elevator.cc	/^ElevatorBank::PressFloor(int goingToFloor, int elevator)$/;"	f	class:ElevatorBank
-PrevPCReg	code/machine/machine.h	67;"	d
+PrevPCReg	code/machine/machine.h	70;"	d
 Print	code/filesys/directory.cc	/^Directory::Print()$/;"	f	class:Directory
 Print	code/filesys/filehdr.cc	/^FileHeader::Print()$/;"	f	class:FileHeader
 Print	code/filesys/filesys.cc	/^FileSystem::Print()$/;"	f	class:FileSystem
@@ -682,7 +682,7 @@ Remove	code/threads/synchlist.cc	/^SynchList::Remove()$/;"	f	class:SynchList
 RequestDone	code/filesys/synchdisk.cc	/^SynchDisk::RequestDone()$/;"	f	class:SynchDisk
 RestoreState	code/userprog/addrspace.cc	/^void AddrSpace::RestoreState() $/;"	f	class:AddrSpace
 RestoreUserState	code/threads/thread.cc	/^Thread::RestoreUserState()$/;"	f	class:Thread
-RetAddrReg	code/machine/machine.h	61;"	d
+RetAddrReg	code/machine/machine.h	64;"	d
 RiderTest	code/machine/elevatortest.cc	/^ElevatorInspector::RiderTest () {$/;"	f	class:ElevatorInspector
 RotationTime	code/machine/stats.h	54;"	d
 Run	code/machine/mipssim.cc	/^Machine::Run()$/;"	f	class:Machine
@@ -790,7 +790,7 @@ Stack	c++example/stack.h	/^class Stack {$/;"	c
 Stack	c++example/templatestack.cc	/^Stack<T>::Stack(int sz) {$/;"	f	class:Stack
 Stack	c++example/templatestack.h	/^class Stack {$/;"	c
 StackAllocate	code/threads/thread.cc	/^Thread::StackAllocate (VoidFunctionPtr func, void *arg)$/;"	f	class:Thread
-StackReg	code/machine/machine.h	60;"	d
+StackReg	code/machine/machine.h	63;"	d
 StackSize	code/bin/coff2flat.c	31;"	d	file:
 StackSize	code/threads/thread.h	57;"	d
 StartProcess	code/userprog/progtest.cc	/^StartProcess(char *filename)$/;"	f
@@ -817,7 +817,7 @@ SystemTick	code/machine/stats.h	53;"	d
 TEMPLATESTACK_H	c++example/templatestack.h	10;"	d
 THREAD_H	code/threads/thread.h	38;"	d
 TIMER_H	code/machine/timer.h	21;"	d
-TLBSize	code/machine/machine.h	37;"	d
+TLBSize	code/machine/machine.h	40;"	d
 TLB_H	code/machine/translate.h	19;"	d
 TRACE	code/bin/disasm.c	/^int TRACE, Traptrace, Regtrace;$/;"	v
 TRACE	code/bin/main.c	/^int TRACE, Traptrace, Regtrace;$/;"	v
@@ -859,6 +859,7 @@ Traptrace	code/bin/disasm.c	/^int TRACE, Traptrace, Regtrace;$/;"	v
 Traptrace	code/bin/main.c	/^int TRACE, Traptrace, Regtrace;$/;"	v
 TsTest	code/threads/threadtest.cc	/^TsTest()$/;"	f
 TypeToReg	code/machine/mipssim.cc	/^TypeToReg(RegType reg, Instruction *instr)$/;"	f	file:
+USE_TLB	code/machine/machine.h	25;"	d
 UTILITY_H	code/threads/utility.h	24;"	d
 Unlink	code/machine/sysdep.cc	/^Unlink(char *name)$/;"	f
 Up	code/machine/elevator.h	/^enum Direction { Down, Up, Neither};$/;"	e	enum:Direction

@@ -46,6 +46,10 @@ extern int currentSyncNum;
 extern Condition* barrierCondition;
 extern Lock* barrierLock;
 
+// labvm
+extern int translateTimes;
+extern int hitTimes;
+
 extern Thread *currentThread;			// the thread holding the CPU
 extern Thread *threadToBeDestroyed;  		// the thread that just finished
 extern Scheduler *scheduler;			// the ready list

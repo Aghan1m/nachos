@@ -1,0 +1,3984 @@
+Initializing address space, num pages 11, size 1408
+Initializing code segment, at 0x0, size 352
+Initializing stack register to 1392
+Starting thread "main" at time 10
+Reading VA 0x0, size 4
+	Translate 0x0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x0, size 4
+	Translate 0x0, read: phys addr = 0x0
+	value read = 0c000034
+At PC = 0x0: JAL 52
+Reading VA 0x4, size 4
+	Translate 0x4, read: phys addr = 0x4
+	value read = 00000000
+At PC = 0x4: SLL r0,r0,0
+Reading VA 0xd0, size 4
+	Translate 0xd0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xd0, size 4
+	Translate 0xd0, read: phys addr = 0xd0
+	value read = 27bdffe0
+At PC = 0xd0: ADDIU r29,r29,-32
+Reading VA 0xd4, size 4
+	Translate 0xd4, read: phys addr = 0xd4
+	value read = afbf001c
+At PC = 0xd4: SW r31,28(r29)
+Writing VA 0x56c, size 4, value 0x8
+	Translate 0x56c, write: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xd4, size 4
+	Translate 0xd4, read: phys addr = 0xd4
+	value read = afbf001c
+At PC = 0xd4: SW r31,28(r29)
+Writing VA 0x56c, size 4, value 0x8
+	Translate 0x56c, write: phys addr = 0x56c
+Reading VA 0xd8, size 4
+	Translate 0xd8, read: phys addr = 0xd8
+	value read = afbe0018
+At PC = 0xd8: SW r30,24(r29)
+Writing VA 0x568, size 4, value 0x0
+	Translate 0x568, write: phys addr = 0x568
+Reading VA 0xdc, size 4
+	Translate 0xdc, read: phys addr = 0xdc
+	value read = 0c000030
+At PC = 0xdc: JAL 48
+Reading VA 0xe0, size 4
+	Translate 0xe0, read: phys addr = 0xe0
+	value read = 03a0f021
+At PC = 0xe0: ADDU r30,r29,r0
+Reading VA 0xc0, size 4
+	Translate 0xc0, read: phys addr = 0xc0
+	value read = 03e00008
+At PC = 0xc0: JR r0,r31
+Reading VA 0xc4, size 4
+	Translate 0xc4, read: phys addr = 0xc4
+	value read = 00000000
+At PC = 0xc4: SLL r0,r0,0
+Reading VA 0xe4, size 4
+	Translate 0xe4, read: phys addr = 0xe4
+	value read = afc00010
+At PC = 0xe4: SW r0,16(r30)
+Writing VA 0x560, size 4, value 0x0
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xe8, size 4
+	Translate 0xe8, read: phys addr = 0xe8
+	value read = 2402270f
+At PC = 0xe8: ADDIU r2,r0,9999
+Reading VA 0xec, size 4
+	Translate 0xec, read: phys addr = 0xec
+	value read = afc20014
+At PC = 0xec: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x270f
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000000
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000000
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x5
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 0000270f
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000005
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x5
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000005
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x6
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000006
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000006
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xb
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000005
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000000b
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000000b
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xc
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000000c
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000000c
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x11
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000011
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000011
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x12
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000012
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000012
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x17
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000017
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000017
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x18
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000018
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000018
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x1d
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000001d
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000001d
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x1e
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000001e
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000001e
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x23
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000023
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000023
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x24
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000024
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000024
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x29
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000029
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000029
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x2a
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000002a
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000002a
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x2f
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000002f
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000002f
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x30
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000030
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000030
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x35
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000035
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000035
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x36
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000036
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000036
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x3b
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000003b
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000003b
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x3c
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000003c
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000003c
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x41
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000041
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000041
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x42
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000042
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000042
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x47
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000047
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000047
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x48
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000048
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000048
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x4d
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000004d
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000004d
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x4e
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000004e
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000004e
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x53
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000053
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000053
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x54
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000054
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000054
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x59
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000059
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000059
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x5a
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000005a
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000005a
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x5f
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000005f
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000005f
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x60
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000060
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000060
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x65
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000065
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000065
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x66
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000066
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000066
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x6b
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000006b
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000006b
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x6c
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000006c
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000006c
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x71
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000071
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000071
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x72
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000072
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000072
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x77
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000077
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000077
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x78
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000078
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000078
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x7d
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000007d
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000007d
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x7e
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000007e
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000007e
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x83
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000083
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000083
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x84
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000084
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000084
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x89
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000089
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000089
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x8a
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000008a
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000008a
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x8f
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000008f
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000008f
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x90
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000090
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000090
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x95
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000095
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000095
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x96
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000096
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 00000096
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x9b
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000009b
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000009b
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0x9c
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000009c
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 0000009c
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xa1
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000a1
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000a1
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xa2
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000a2
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000a2
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xa7
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000a7
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000a7
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xa8
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000a8
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000a8
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xad
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000ad
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000ad
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xae
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000ae
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000ae
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xb3
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000b3
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000b3
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xb4
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000b4
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000b4
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xb9
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000b9
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000b9
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xba
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000ba
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000ba
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xbf
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000bf
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000bf
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xc0
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000c0
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000c0
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xc5
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000c5
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000c5
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xc6
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000c6
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x10c, size 4
+	Translate 0x10c, read: phys addr = 0x10c
+	value read = 8fc20010
+At PC = 0x10c: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000c6
+Reading VA 0x110, size 4
+	Translate 0x110, read: phys addr = 0x110
+	value read = 00000000
+At PC = 0x110: SLL r0,r0,0
+Reading VA 0x114, size 4
+	Translate 0x114, read: phys addr = 0x114
+	value read = 24430005
+At PC = 0x114: ADDIU r3,r2,5
+Reading VA 0x118, size 4
+	Translate 0x118, read: phys addr = 0x118
+	value read = afc30010
+At PC = 0x118: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xcb
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0x11c, size 4
+	Translate 0x11c, read: phys addr = 0x11c
+	value read = 8fc20014
+At PC = 0x11c: LW r2,20(r30)
+Reading VA 0x564, size 4
+	Translate 0x564, read: phys addr = 0x564
+	value read = 00000001
+Reading VA 0x120, size 4
+	Translate 0x120, read: phys addr = 0x120
+	value read = 8fc30010
+At PC = 0x120: LW r3,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000cb
+Reading VA 0x124, size 4
+	Translate 0x124, read: phys addr = 0x124
+	value read = 00000000
+At PC = 0x124: SLL r0,r0,0
+Reading VA 0x128, size 4
+	Translate 0x128, read: phys addr = 0x128
+	value read = 00431024
+At PC = 0x128: AND r2,r2,r3
+Reading VA 0x12c, size 4
+	Translate 0x12c, read: phys addr = 0x12c
+	value read = afc20014
+At PC = 0x12c: SW r2,20(r30)
+Writing VA 0x564, size 4, value 0x1
+	Translate 0x564, write: phys addr = 0x564
+Reading VA 0x130, size 4
+	Translate 0x130, read: phys addr = 0x130
+	value read = 8fc20010
+At PC = 0x130: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000cb
+Reading VA 0x134, size 4
+	Translate 0x134, read: phys addr = 0x134
+	value read = 00000000
+At PC = 0x134: SLL r0,r0,0
+Reading VA 0x138, size 4
+	Translate 0x138, read: phys addr = 0x138
+	value read = 24430001
+At PC = 0x138: ADDIU r3,r2,1
+Reading VA 0x13c, size 4
+	Translate 0x13c, read: phys addr = 0x13c
+	value read = 0800003c
+At PC = 0x13c: J 60
+Reading VA 0x140, size 4
+	Translate 0x140, read: phys addr = 0x140
+	value read = afc30010
+At PC = 0x140: SW r3,16(r30)
+Writing VA 0x560, size 4, value 0xcc
+	Translate 0x560, write: phys addr = 0x560
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0xf0, size 4
+	Translate 0xf0, read: phys addr = 0xf0
+	value read = 8fc20010
+At PC = 0xf0: LW r2,16(r30)
+Reading VA 0x560, size 4
+	Translate 0x560, read: phys addr = 0x560
+	value read = 000000cc
+Reading VA 0xf4, size 4
+	Translate 0xf4, read: phys addr = 0xf4
+	value read = 00000000
+At PC = 0xf4: SLL r0,r0,0
+Reading VA 0xf8, size 4
+	Translate 0xf8, read: phys addr = 0xf8
+	value read = 284300c8
+At PC = 0xf8: SLTI r3,r2,200
+Reading VA 0xfc, size 4
+	Translate 0xfc, read: phys addr = 0xfc
+	value read = 14600003
+At PC = 0xfc: BNE r3,r0,3
+Reading VA 0x100, size 4
+	Translate 0x100, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x100, size 4
+	Translate 0x100, read: phys addr = 0x100
+	value read = 00000000
+At PC = 0x100: SLL r0,r0,0
+Reading VA 0x104, size 4
+	Translate 0x104, read: phys addr = 0x104
+	value read = 08000051
+At PC = 0x104: J 81
+Reading VA 0x108, size 4
+	Translate 0x108, read: phys addr = 0x108
+	value read = 00000000
+At PC = 0x108: SLL r0,r0,0
+Reading VA 0x144, size 4
+	Translate 0x144, read: phys addr = 0x144
+	value read = 0c000004
+At PC = 0x144: JAL 4
+Reading VA 0x148, size 4
+	Translate 0x148, read: phys addr = 0x148
+	value read = 00000000
+At PC = 0x148: SLL r0,r0,0
+Reading VA 0x10, size 4
+	Translate 0x10, read: *** no valid TLB entry found for this virtual page!
+Exception: page fault/no TLB entry
+=> TLB Miss. 
+Reading VA 0x10, size 4
+	Translate 0x10, read: phys addr = 0x10
+	value read = 24020000
+At PC = 0x10: ADDIU r2,r0,0
+Reading VA 0x14, size 4
+	Translate 0x14, read: phys addr = 0x14
+	value read = 0000000c
+At PC = 0x14: SYSCALL
+Exception: syscall
+Shutdown, initiated by user program.
+Machine halting!
+
+Ticks: total 865, idle 0, system 90, user 775
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

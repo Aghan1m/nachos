@@ -172,9 +172,7 @@ class Machine {
 // If "tlb" is non-NULL, the Nachos kernel is responsible for managing
 //	the contents of the TLB.  But the kernel can use any data structure
 //	it wants (eg, segmented paging) for handling TLB cache misses.
-// 
-// For simplicity, both the page table pointer and the TLB pointer are
-// public.  However, while there can be multiple page tables (one per address
+// // For simplicity, both the page table pointer and the TLB pointer are // public.  However, while there can be multiple page tables (one per address
 // space, stored in memory), there is only one TLB (implemented in hardware).
 // Thus the TLB pointer should be considered as *read-only*, although 
 // the contents of the TLB are free to be modified by the kernel software.

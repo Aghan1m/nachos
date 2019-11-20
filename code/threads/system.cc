@@ -25,6 +25,9 @@ int currentSyncNum;
 Condition* barrierCondition;
 Lock* barrierLock;
 
+int translateTimes;
+int hitTimes;
+
 // This defines *all* of the global data structures used by Nachos.
 // These are all initialized and de-allocated by this file.
 
@@ -120,6 +123,10 @@ Initialize(int argc, char **argv)
 
 	barrierCondition = new Condition("BarrierCondition");
 	barrierLock = new Lock("producer_consumer_lock");
+	
+	//labvm
+	translateTimes = 0;
+	hitTimes = 0;
 
 #ifdef USER_PROGRAM
     bool debugUserProg = FALSE;	// single step user program

@@ -39,24 +39,45 @@ void FIFOSwap(int virtAddr) {
     int TLBreplaceIdx = -1;
 	unsigned int vpn = (unsigned) virtAddr/PageSize;
 	printf("FIFO virtual address is: %d, vpn is: %d\n", virtAddr);
-    // Find the empty entry
     for (int i = 0; i < TLBSize; i++) {
         if (machine->tlb[i].valid == FALSE) {
             TLBreplaceIdx = i;
             break;
         }
     }
-    // If full then move everything forward and remove the last one
     if (TLBreplaceIdx == -1) {
         TLBreplaceIdx = TLBSize - 1;
         for (int i = 0; i < TLBSize - 1; i++) {
             machine->tlb[i] = machine->tlb[i+1];
         }
     }
-    // Update TLB
     machine->tlb[TLBreplaceIdx] = machine->pageTable[vpn];
 }
 
+void LRUSwap(int virtAddr) {
+    int TLBreplaceIdx = -1;
+	unsigned int vpn = (unsigned) virtAddr/PageSize;
+	printf("LRU virtual address is: %d, vpn is: %d\n", virtAddr);
+    for (int i = 0; i < TLBSize; i++) {
+        if (machine->tlb[i].valid == FALSE) {
+            TLBreplaceIdx = i;
+			machine->tlb[i].lastUsedTime = stats->totalTicks;
+            break;
+        }
+    }
+
+    if (TLBreplaceIdx == -1) {
+		int theEarliest = machine->tlb[0].lastUsedTime;
+		TLBreplaceIdx = 0;
+        for (int i = 1; i < TLBSize; i++) {
+            if(theEarliest > machine->tlb[i].lastUsedTime) {
+				theEarliest = machine->tlb[i].lastUsedTime;
+				TLBreplaceIdx = i;
+			}
+        }
+    }
+    machine->tlb[TLBreplaceIdx] = machine->pageTable[vpn];
+}
 //----------------------------------------------------------------------
 // ExceptionHandler
 // 	Entry point into the Nachos kernel.  Called when a user program
@@ -92,8 +113,8 @@ ExceptionHandler(ExceptionType which)
 			DEBUG('m', "=> TLB Miss. \n");
 			int BadVAddr = machine->ReadRegister(BadVAddrReg);
 //			TLBMissHandler(BadVAddr);
-			FIFOSwap(BadVAddr);
-//			LRUSwap(BadVAddr);
+//			FIFOSwap(BadVAddr);
+			LRUSwap(BadVAddr);
 		}
 		return;
 	}
